@@ -1,2 +1,0 @@
-# MasterarbeitSynthCkts
-Neu Repository
