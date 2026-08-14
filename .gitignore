@@ -1,0 +1,15 @@
+_build
+.ipynb_checkpoints
+.DS_Store
+*.log
+*.op.raw
+*_cache
+*_files
+auto
+*.rel
+_book
+docs
+_freeze
+/.quarto/
+
+**/*.quarto_ipynb
