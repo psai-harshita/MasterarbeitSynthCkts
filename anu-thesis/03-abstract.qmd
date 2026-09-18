@@ -1,1 +1,67 @@
 # Abstract {.unnumbered}
+
+# Introduction {.unnumbered}
+
+Synthesizer is an electronic musical instrument that generates audio signals which can be converted to sound. Synthesizers create a wide variety of sounds by manipulating electrical signals through various synthesis techniques. Analog synthesizers, in particular, use continuous voltage signals to produce sound. The design and implementation of analog synthesizer circuits require a deep understanding of electronic components, signal processing, and circuit design principles.
+
+Instead of adding several components to a breadboard and connecting them with wires, the LABOR workstation provides a more structured and efficient environment for circuit prototyping. It allows for the integration of multiple circuit modules which includes  a full-size breadboard, a dual power supply with short-circuit protection, an oscilloscope, and built-in signal and control sources and an interfacing section, enabling the creation of complex synthesizer architectures without the need for excessive wiring. This makes it an ideal platform for educational purposes, allowing students to focus on understanding the underlying principles of analog synthesis and known as "All in one workstation".
+
+This thesis presents the design and implementation of electronic circuit architectures for analog music synthesis using the LABOR workstation as a practical development and prototyping platform. The work integrates hardware circuit design with software components to create a functional electronic music synthesis system suitable for educational purposes particularly for observing, measuring and evaluating the generated signals.
+
+The work will be inspired by the Moritz Klein's synthesizer-design tutorials and approach starts with fundamental circuit concepts and progressively develops them into functional synthesizer building blocks. 
+
+The goal is not only to reproduce existing synthesizer circuits but rather their underlying design ideas will be used as a starting point for developing, testing and documenting an independently designed set of circuits on the LABOR workstation.
+
+# Overview {.unnumbered}
+
+This thesis will explore three circuit areas that can be combined to create a small experimental electronic music system. The first part will focus on converting a sawtooth waveform into a triangular waveform, with particular attention to how the circuit design and component values influence the output. The second part will involve developing a simple hardware-based sequencer for generating rhythmic patterns using clock signals, shift registers, and sequence controls. The final part will investigate the generation of different types of noise, particularly white, pink, and blue noise, and how their frequency characteristics can be shaped through filtering. After developing and testing the three circuit sections individually.
+
+The main purpose of the thesis is not only to build the circuits, but also gain a practical understanding of how they work and how different components and design choices affect their behaviour. The circuits will be tested in the laboratory, and the measured results will be compared with the expected theoretical behaviour. Software tools will also be used when they are useful for visualising or analysing the signals.
+
+# Objective {.unnumbered}
+
+The primary objective is to develop synthesizer circuit architectures that can be implemented on the LABOR platform, encompassing core building blocks such as voltage-controlled oscillators (VCOs), envelope generators, filters, and amplifiers. 
+The list of tasks to be accomplished in this thesis includes:
+- To understand the electronic principles behind waveform conversion, sequencing and noise generation
+- To design and implement the circuits on the LABOR workstation
+- To test and evaluate the circuits, comparing measured results with theoretical expectations
+- To develop hardware /software interfaces for testing  and analysing the circuits
+- To document the design process, circuit schematics, and experimental results in a clear and educational manner
+
+# Work Packages {.unnumbered}
+
+1. Technical research and literature review:
+   - This phase will focus on building a solid understanding of the technical topics like waveform conversion, sequencing, and noise generation. It will involve reviewing existing literature, tutorials, and research papers to gather relevant information and insights and to identify best practices and design principles for synthesizer circuit design.
+
+2. Circuit design and implementation:
+    - In this phase, the knowledge gained from the research will be applied to design the synthesizer circuits to implement on the LABOR workstation. This will involve creating circuit schematics, selecting appropriate components. The design process will be iterative, with refinement of the circuits based on observed performance and theoretical expectations.
+
+3. Testing and evaluation:
+    - This phase will involve testing the implemented circuits on the LABOR workstation, measuring their performance, and comparing the results with theoretical expectations. The testing process will include using oscilloscopes and other measurement tools to observe the generated signals. Each circuit section will first be examined independently so that possible problems can be identified more easily and depending on Depending on the circuit, data will be measured which include waveform shape, signal amplitude, timing accuracy, frequency response, and noise behaviour.
+
+4. Software integration:
+    - In this phase, software tools will be developed to facilitate the testing and analysis of the circuits which include programming and designing the circuit using specific softare tools. The software will be used to visualize the generated signals, perform signal analysis.
+
+5. Documentation:
+    - The final phase will bring together the results from the previous work packages and involve documenting the entire design process, circuit schematics, images, experimental results, and analysis in a clear and educational manner. The thesis will describe the development process and discuss both the successful results and the limitations encountered during the whole process.
+
+
+# Work Plan {.unnumbered}
+
+Month 1: Technical research, literature review and analysing Moritz Klein's tutorials. 
+Month 2: Familiarization with the LABOR workstation, initial circuit design, and circuit calculations.
+Month 3: Circuit implementation on LABOR and testing of the individual circuits.
+Month 4: Further testing, evaluation, and refinement of the circuits based on observed performance.
+Month 5: Development of software tools for testing and analysis, and integration with the hardware circuits
+Month 6: Documentation of the entire design process, circuit schematics, experimental results, and analysis.
+
+# References {.unnumbered}
+1. https://www.moritzkleininstruments.com/
+2. https://www.youtube.com/@MoritzKlein0
+
+
+
+
+
+
+
