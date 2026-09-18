@@ -57,7 +57,6 @@ Month 6: Documentation of the entire design process, circuit schematics, experim
 
 # References {.unnumbered}
 1. https://www.moritzkleininstruments.com/
-2. https://www.youtube.com/@MoritzKlein0
 
 
 
