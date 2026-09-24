@@ -56,7 +56,13 @@ Month 5: Development of software tools for testing and analysis, and integration
 Month 6: Documentation of the entire design process, circuit schematics, experimental results, and analysis.
 
 # References {.unnumbered}
-1. https://www.moritzkleininstruments.com/
+1. Modelling the Excess Noise due to Avalanche Multiplication in (Hetero-Junction) Bipolar Transistors - J. C. J. Paasschens and R. de Kort - Bipolar/BiCMOS Circuits and Technology, 2004.
+2. Probability, Random Variables and Stochastic Processes -  A. Papoulis, S. U. Pillai -  4th ed., McGraw-Hill, 2002.
+3.The Differential Pair as a Triangle-Sine Wave Converter -  R. G. Meyer, W. M. C. Sansen, S. Lui, S. Peeters - IEEE Journal of Solid-State Circuits, June 1976.
+4. Design with Operational Amplifiers and Analog Integrated Circuits - S. Franco - 4th ed., McGraw-Hill, 2015
+5. Limitations of a relaxation oscillator in capacitance measurements - Y. Liu, S. Chen, K. Nakayama, K. Watanabe -  IEEE Transactions on Instrumentation and Measurement ( Volume: 49, Issue: 5),  October 2000.
+6. Tunable Waveform Generator for Sensor and Instrumentation Applications - Sougata Kumar Kar, Siddhartha Sen -  IEEE Transactions on Instrumentation and Measurement ( Volume: 60, Issue: 10), October 2011.
+7. https://www.moritzkleininstruments.com/
 
 
 
