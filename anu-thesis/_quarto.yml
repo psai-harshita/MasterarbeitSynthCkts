@@ -1,66 +1,139 @@
 project:
-  type: anu-thesis
-  output-dir: docs
+  type: book
+  output-dir: _book
 
 book:
-   title: "{{< var title >}}"
-   subtitle: "{{< var subtitle >}}"
-   author: "{{< var author >}}"
-   date: today
+  title: "Evaluation of LABOR Synthesizer for Educational Purposes in Electronics"
+  author:
+    - name: "Punnavarjula Sai Harshita"
+      email: "psai-harshita@stud.hs-bremen.de"
+      orcid: ""
+      corresponding: true
+      roles: "Lead author"
+      affiliation:
+        - id: hsb
+        - name: "Hochschule Bremen - City University of Applied Sciences"
+          city: "Bremen"
+          state: "Germany"
+          url: "https://www.hs-bremen.de"
+          department: "School of Electrical Engineering and Computer Sciences"
 
-   repo-url: https://github.com/psai-harshita/MasterarbeitSynthCkts
-   repo-branch: main
-   repo-actions: [edit, issue]
-   downloads: [pdf, epub]
+  date: "1 October 2026"
+  date-format: "MMMM YYYY"
+  # license: "Apache-2.0 license"
 
-   #cover-image: images/example-html.png
-   #cover-image-alt: "This is a cover image."
-   chapters:
-     - index.qmd
-     - 01-dedication.qmd
-     - 02-declaration.qmd
-     - 03-abstract.qmd
-     - 04-acknowledgements.qmd
-     - chapter1.qmd
-     - chapter2.qmd
-     - references.qmd
-   appendices:
-     - tools.qmd
-   page-footer: "Copyright © 2026, Punnavarjula Sai Harshita"
+  reader-mode: true
 
-   output-file: "thesis_psh"
+  page-footer:
+    left: |
+      Evaluation of LABOR Synthesizer for Educational Purposes in Electronics
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  # cover-image: images/hsb-logo.png
+  # favicon: images/hsb-logo.png
+
+  repo-url: https://github.com/psai-harshita/MasterarbeitSynthCkts
+  repo-branch: main
+  repo-actions: [edit, issue]
+  downloads: [pdf]
+
+  chapters:
+    - frontmatter/02-declaration.qmd
+    - frontmatter/03-abstract.qmd
+    - frontmatter/04-acknowledgements.qmd
+    - index.qmd
+    - chapter1.qmd
+    - chapter2.qmd
+    - references.qmd
+    
+  appendices:
+    - appendix/appendix_A.qmd
+    - appendix/appendix_B.qmd
+    
+  output-file: "thesis_psh"
+   
 
 # Bibliography
 bibliography: _bibliography/references.bib
 csl: _bibliography/ieee.csl
 
-comments:
-  hypothesis: true
-
-degree: "{{< var degree >}}"
-school: "{{< var school >}}"
-date-start: "{{< var date-start >}}"
-date-end: "{{< var date-end >}}"
-titlepage-supervisor: true
-supervisor:
-  - Prof. Dr.-Ing. Mirco Meiners
-  - Prof. Dr.-Ing. Mario Goldenbaum
-
-
-
 format:
-  anu-thesis-html: default
-    
-  anu-thesis-pdf:
-    keep-tex: false
-    classoption: twoside
+  html:
+    theme: flatly
+    fontsize: 1.2em
+    linestretch: 1.7
+    # mainfont: Helvetica Neue, Helvetica, Arial, sans
+    # monofont: Cascadia Mono, Menlo, Consolas, Courier New, Courier
+    # backgroundcolor: "white"
+    # fontcolor: "black"
+    highlight-style: github
+
+  epub:
+    theme: flatly
+    fontsize: 1.2em
+    linestretch: 1.7
+    # mainfont: Helvetica Neue, Helvetica, Arial, sans
+    # monofont: Cascadia Mono, Menlo, Consolas, Courier New, Courier
+    # backgroundcolor: "white"
+    # fontcolor: "black"
+    highlight-style: github
+
+  # typst: default
+
+  pdf:
+    documentclass: scrbook
+    classoption: [twoside]
+    keep-tex: true
+
+    papersize: a4
+    fig-pos: "H"
+
+    toc: true
+    toc-depth: 3
+    toc-title: "Table of contents"
+    lof: true
+    lot: true
+
+    number-sections: true
+    number-depth: 2
     highlight-style: pygments
-    
-    # fontsize: 11pt
-    # pdfengine: xelatex
+        
+    geometry:
+      - inner=3cm
+      - outer=4cm
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=3cm
+      - right=1.5cm
+      - headsep=22pt
+      - headheight=11pt
+      - footskip=33pt
+      - ignorehead
+      - ignorefoot
+      - heightrounded
+
+    hyperrefoptions: 
+      - linktoc=all
+    colorlinks: true
+    linkcolor: "blue"
+
+    fontsize: 11pt
+    pdfengine: xelatex
 
     # Fonts
     mainfont: "Latin Modern Roman"
-    sansfont: "Arial"
-    monofont: "Courier New"
-    mathfont: "TeX Gyre Termes Math"
+    # sansfont: "Arial"
+    # monofont: "Courier New"
+    # mathfont: "TeX Gyre Termes Math"
+    
+    include-in-header:
+      - frontmatter/header.tex
+
+    template-partials: []
+
+    include-before-body: 
+      - frontmatter/titlepage.tex
+
+    supervisors: 
+      - Prof. Dr.-Ing. M. Meiners
+      - Prof. Dr.-Ing. M. Goldenbaum  
