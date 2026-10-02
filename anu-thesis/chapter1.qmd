@@ -41,7 +41,12 @@ work and how different components and design choices affect their behaviour. The
 laboratory, and the measured results will be compared with the expected theoretical behaviour. Software tools will also
 be used when they are useful for visualising or analysing the signals. 
 
-*What about the educational purpose for students like you and undergrads?*
+
+This approach will be expected to help students connect theoretical principles with observable sound phenomena and measurable electrical signals. In each exercise,
+students predict the result, measure it, and compare it with theory. The built-in tools of the LABOR workstation  supports the experimental process by minimizing potential wiring errors and enabling students to carry out the exercises with little supervision. Designing and building a circuits that generate audible signals also expected to keep students interested, engaging and motivating practical learning experience. Together, the three circuit areas teach useful concepts in operational amplifier circuits, digital logic, and filter design.
+
+
+
 
 
 ## Objective
@@ -114,6 +119,43 @@ Month 3: Circuit implementation on LABOR and testing of the individual circuits.
 Month 4: Further testing, evaluation, and refinement of the circuits based on observed performance.
 Month 5: Development of software tools for testing and analysis, and integration with the hardware circuits
 Month 6: Documentation of the entire design process, circuit schematics, experimental results, and analysis.
+
+
+```{mermaid}
+%%| label: fig-gantt
+%%| fig-cap: "Project timeline of the thesis work"
+gantt
+    title Thesis Project Schedule
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %Y
+    todayMarker off
+
+    section Month 1
+    Technical research    :a1, 2026-10-01, 2026-10-31
+    Literature review     :a2, 2026-10-01, 2026-10-31
+
+    section Month 2
+    LABOR-Familiarization           :b1, 2026-11-01, 2026-11-30
+    Initial circuit design          :b2, 2026-11-01, 2026-11-30
+
+    section Month 3
+    Circuit implementation              :c1, 2026-12-01, 2026-12-31
+    Testing                             :c2, 2026-12-01, 2026-12-31
+
+    section Month 4    
+    Evaluation of circuits                  :d1, 2027-01-01, 2027-01-31                    
+    Circuit refinement                      :d1, 2027-01-01, 2027-01-31
+    
+
+    section Month 5
+    Software development                 :e1, 2027-02-01, 2027-02-28
+    Integration with hardware           :e2, 2027-02-01, 2027-02-28
+
+    section Month 6
+    Documentation and analysis                    :f1, 2027-03-01, 2027-03-31
+```
+
+
 
 
 ## References 
