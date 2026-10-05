@@ -34,7 +34,7 @@ attention to how the circuit design and component values influence the output. T
 simple hardware-based sequencer for generating rhythmic patterns using clock signals, shift registers, and sequence
 controls. The final part will investigate the generation of different types of noise, particularly white, pink, and blue
 noise, and how their frequency characteristics can be shaped through filtering. After developing and testing the three
-circuit sections individually.
+circuit sections individually.@Meyer_1976  @Liu_2000 @Papoulis_2002 @Franco_2015 @Paasschens_2004
 
 The main purpose of the thesis is not only to build the circuits, but also gain a practical understanding of how they
 work and how different components and design choices affect their behaviour. The circuits will be tested in the
@@ -163,7 +163,7 @@ gantt
 Put them all in your bibliography (BibTeX file _bibliography/references.bib), use a reference manager like zotero and
 then cite. This will automatically generate a biblikography at the end of your thesis, see references.qmd file.
 
-See:
+%%See:
 - [Quarto - Citations](https://quarto.org/docs/authoring/citations.html)
 - [Quarto and BibTeX](https://bibtex.eu/quarto/)
 - [Zotero](https://www.zotero.org) and [Better BibTeX](https://github.com/retorquere/zotero-better-bibtex)
