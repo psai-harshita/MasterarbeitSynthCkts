@@ -127,6 +127,17 @@ Month 6: Documentation of the entire design process, circuit schematics, experim
 ```{mermaid}
 %%| label: fig-gantt
 %%| fig-cap: "Project timeline of the thesis work"
+%%{init: {
+  'gantt': {
+    'useWidth': 1800,
+    'useMaxWidth': false,
+    'fontSize': 11,
+    'sectionFontSize': 14,
+    'barHeight': 30,
+    'barGap': 6,
+    'leftPadding': 90
+  }
+}}%%
 gantt
     title Thesis Project Schedule
     dateFormat  YYYY-MM-DD
@@ -156,7 +167,7 @@ gantt
 
     section Month 6
     Documentation and analysis   :f1, 2027-03-01, 2027-03-31
-    
+
 ```
 
 
