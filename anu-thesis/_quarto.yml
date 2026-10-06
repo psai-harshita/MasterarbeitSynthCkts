@@ -83,7 +83,7 @@ format:
   pdf:
     documentclass: scrbook
     classoption: [twoside]
-    keep-tex: true
+    keep-tex: false
 
     papersize: a4
     fig-pos: "H"
