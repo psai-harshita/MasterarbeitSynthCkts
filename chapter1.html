@@ -95,6 +95,9 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -254,9 +257,9 @@ div.csl-indent {
 <p>The goal is not only to reproduce existing synthesizer circuits but rather their underlying design ideas will be used as a starting point for developing, testing and documenting an independently designed set of circuits on the LABOR workstation.</p>
 <section id="overview" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1.1</span> Overview</h2>
-<p>This thesis will explore three circuit areas that can be combined to create a small experimental electronic music system. The first part will focus on converting a sawtooth waveform into a triangular waveform, with particular attention to how the circuit design and component values influence the output. The second part will involve developing a simple hardware-based sequencer for generating rhythmic patterns using clock signals, shift registers, and sequence controls. The final part will investigate the generation of different types of noise, particularly white, pink, and blue noise, and how their frequency characteristics can be shaped through filtering. After developing and testing the three circuit sections individually.</p>
+<p>This thesis will explore three circuit areas that can be combined to create a small experimental electronic music system. The first part will focus on converting a sawtooth waveform into a triangular waveform, with particular attention to how the circuit design and component values influence the output. The second part will involve developing a simple hardware-based sequencer for generating rhythmic patterns using clock signals, shift registers, and sequence controls. The final part will investigate the generation of different types of noise, particularly white, pink, and blue noise, and how their frequency characteristics can be shaped through filtering. After developing and testing the three circuit sections individually.@Meyer_1976 <span class="citation" data-cites="Liu_2000"><a href="references.html#ref-Liu_2000" role="doc-biblioref">[3]</a></span> <span class="citation" data-cites="Papoulis_2002"><a href="references.html#ref-Papoulis_2002" role="doc-biblioref">[4]</a></span> <span class="citation" data-cites="Franco_2001"><a href="references.html#ref-Franco_2001" role="doc-biblioref">[5]</a></span> <span class="citation" data-cites="Paasschens_2004"><a href="references.html#ref-Paasschens_2004" role="doc-biblioref">[6]</a></span></p>
 <p>The main purpose of the thesis is not only to build the circuits, but also gain a practical understanding of how they work and how different components and design choices affect their behaviour. The circuits will be tested in the laboratory, and the measured results will be compared with the expected theoretical behaviour. Software tools will also be used when they are useful for visualising or analysing the signals.</p>
-<p><em>What about the educational purpose for students like you and undergrads?</em></p>
+<p>This approach will be expected to help students connect theoretical principles with observable sound phenomena and measurable electrical signals. In each exercise, students predict the result, measure it, and compare it with theory. The built-in tools of the LABOR workstation supports the experimental process by minimizing potential wiring errors and enabling students to carry out the exercises with little supervision. Designing and building a circuits that generate audible signals also expected to keep students interested, engaging and motivating practical learning experience. Together, the three circuit areas teach useful concepts in operational amplifier circuits, digital logic, and filter design.</p>
 </section>
 <section id="objective" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="objective"><span class="header-section-number">1.2</span> Objective</h2>
@@ -289,11 +292,68 @@ div.csl-indent {
 <h2 data-number="1.4" class="anchored" data-anchor-id="work-plan"><span class="header-section-number">1.4</span> Work Plan</h2>
 <p>Use a Gantt-Chart with Mermaid, see: - <a href="https://quarto.org/docs/authoring/diagrams.html">Quarto - Diagrams</a> - <a href="https://mermaid.js.org/syntax/gantt.html">Mermaid - Gantt</a></p>
 <p>Month 1: Technical research, literature review and analysing Moritz Klein’s tutorials. Month 2: Familiarization with the LABOR workstation, initial circuit design, and circuit calculations. Month 3: Circuit implementation on LABOR and testing of the individual circuits. Month 4: Further testing, evaluation, and refinement of the circuits based on observed performance. Month 5: Development of software tools for testing and analysis, and integration with the hardware circuits Month 6: Documentation of the entire design process, circuit schematics, experimental results, and analysis.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-gantt" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gantt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-gantt">%%{init: {
+  'gantt': {
+    'useWidth': 1800,
+    'useMaxWidth': false,
+    'fontSize': 11,
+    'sectionFontSize': 14,
+    'barHeight': 30,
+    'barGap': 6,
+    'leftPadding': 90
+  }
+}}%%
+gantt
+    title Thesis Project Schedule
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %Y
+    todayMarker off
+
+    section Month 1
+    Technical research    :a1, 2026-10-01, 2026-10-31
+    Literature review     :a2, 2026-10-01, 2026-10-31
+
+    section Month 2
+    LABOR familiarization  :b1, 2026-11-01, 2026-11-30
+    Circuit design  :b2, 2026-11-01, 2026-11-30
+
+    section Month 3
+    Circuit implementation  :c1, 2026-12-01, 2026-12-31
+    Testing :c2, 2026-12-01, 2026-12-31
+
+    section Month 4    
+    Evaluation of circuits   :d1, 2027-01-01, 2027-01-31                    
+    Circuit refinement     :d2, 2027-01-01, 2027-01-31
+    
+
+    section Month 5
+    Software development   :e1, 2027-02-01, 2027-02-28
+    Integration with hardware  :e2, 2027-02-01, 2027-02-28
+
+    section Month 6
+    Documentation and analysis   :f1, 2027-03-01, 2027-03-31
+
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gantt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: Project timeline of the thesis work
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="references" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="references"><span class="header-section-number">1.5</span> References</h2>
 <p>Put them all in your bibliography (BibTeX file _bibliography/references.bib), use a reference manager like zotero and then cite. This will automatically generate a biblikography at the end of your thesis, see references.qmd file.</p>
-<p>See: - <a href="https://quarto.org/docs/authoring/citations.html">Quarto - Citations</a> - <a href="https://bibtex.eu/quarto/">Quarto and BibTeX</a> - <a href="https://www.zotero.org">Zotero</a> and <a href="https://github.com/retorquere/zotero-better-bibtex">Better BibTeX</a></p>
+<p>%%See: - <a href="https://quarto.org/docs/authoring/citations.html">Quarto - Citations</a> - <a href="https://bibtex.eu/quarto/">Quarto and BibTeX</a> - <a href="https://www.zotero.org">Zotero</a> and <a href="https://github.com/retorquere/zotero-better-bibtex">Better BibTeX</a></p>
 <ol type="1">
 <li>Modelling the Excess Noise due to Avalanche Multiplication in (Hetero-Junction) Bipolar Transistors - J. C. J. Paasschens and R. de Kort - Bipolar/BiCMOS Circuits and Technology, 2004.</li>
 <li>Probability, Random Variables and Stochastic Processes - A. Papoulis, S. U. Pillai - 4th ed., McGraw-Hill, 2002.</li>
@@ -312,6 +372,18 @@ div.csl-indent {
 </div>
 <div id="ref-Kar_2011" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[2] </div><div class="csl-right-inline">S. K. Kar and S. Sen, <span>“Tunable square-wave generator for integrated sensor applications,”</span> <em>IEEE Transactions on Instrumentation and Measurement</em>, vol. 60, no. 10, pp. 3369–3375, Oct. 2011, doi: <a href="https://doi.org/10.1109/tim.2011.2128490">10.1109/tim.2011.2128490</a>.</div>
+</div>
+<div id="ref-Liu_2000" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">Y. Liu, S. Chen, K. Nakayama, and K. Watanabe, <span>“Limitations of a relaxation oscillator in capacitance measurements,”</span> <em>IEEE Transactions on Instrumentation and Measurement</em>, vol. 49, no. 5, pp. 980–983, Oct. 2000, doi: <a href="https://doi.org/10.1109/19.872917">10.1109/19.872917</a>.</div>
+</div>
+<div id="ref-Papoulis_2002" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">A. Papoulis and S. U. Pillai, <em>Probability, random variables and stochastic processes</em>, 4th ed. McGraw-Hill, 2002, p. 186.</div>
+</div>
+<div id="ref-Franco_2001" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">Sergio. Franco, <em>Design with operational amplifiers and analog integrated circuits</em>, 3rd ed. in McGraw-hill series in electrical and computer engineering. McGraw-Hill, Inc., United States, 2001, p. 672. Available: <a href="https://dl.acm.org/doi/abs/10.5555/1593999">https://dl.acm.org/doi/abs/10.5555/1593999</a></div>
+</div>
+<div id="ref-Paasschens_2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">J. C. J. Paasschens and R. de Kort, <span>“Modelling the excess noise due to avalanche multiplication in (hetero-junction) bipolar transistors,”</span> Institute of Electrical; Electronics Engineers (IEEE), 2004, pp. 108–111. doi: <a href="https://doi.org/10.1109/BIPOL.2004.1365757">10.1109/BIPOL.2004.1365757</a>.</div>
 </div>
 </div>
 </section>
