@@ -112,10 +112,6 @@ The list of tasks to be accomplished in this thesis includes:
 
 ## Work Plan
 
-Use a Gantt-Chart with Mermaid, see:
-- [Quarto - Diagrams](https://quarto.org/docs/authoring/diagrams.html)
-- [Mermaid - Gantt](https://mermaid.js.org/syntax/gantt.html)
-
 Month 1: Technical research, literature review and analysing Moritz Klein's tutorials. 
 Month 2: Familiarization with the LABOR workstation, initial circuit design, and circuit calculations.
 Month 3: Circuit implementation on LABOR and testing of the individual circuits.
@@ -175,14 +171,6 @@ gantt
 
 ## References 
 
-Put them all in your bibliography (BibTeX file _bibliography/references.bib), use a reference manager like zotero and
-then cite. This will automatically generate a biblikography at the end of your thesis, see references.qmd file.
-
-%%See:
-- [Quarto - Citations](https://quarto.org/docs/authoring/citations.html)
-- [Quarto and BibTeX](https://bibtex.eu/quarto/)
-- [Zotero](https://www.zotero.org) and [Better BibTeX](https://github.com/retorquere/zotero-better-bibtex)
-
 1. Modelling the Excess Noise due to Avalanche Multiplication in (Hetero-Junction) Bipolar Transistors -
    J. C. J. Paasschens and R. de Kort - Bipolar/BiCMOS Circuits and Technology, 2004. 
 2. Probability, Random Variables and Stochastic Processes -  A. Papoulis, S. U. Pillai -  4th ed., McGraw-Hill, 2002.
@@ -194,4 +182,4 @@ then cite. This will automatically generate a biblikography at the end of your t
    Transactions on Instrumentation and Measurement ( Volume: 60, Issue: 10), October 2011. 
 7. https://www.moritzkleininstruments.com/
 
-*References are not only a list at the end of your report, they need to be linked/referenced from your writings.*
+
