@@ -123,14 +123,17 @@ Month 6: Documentation of the entire design process, circuit schematics, experim
 ```{mermaid}
 %%| label: fig-gantt
 %%| fig-cap: "Project timeline of the thesis work"
+%%| fig-width: 6.5
 %%{init: {
   'gantt': {
-   'useMaxWidth': false,
-    'fontSize': 11,
-    'sectionFontSize': 14,
-    'barHeight': 35,
+    'useMaxWidth': false,
+    'useWidth': 900,
+    'fontSize': 10,
+    'sectionFontSize': 12,
+    'barHeight': 30,
     'barGap': 6,
-    'leftPadding': 90,
+    'leftPadding': 70,
+    'rightPadding': 20,
     'topPadding': 50
   }
 }}%%
