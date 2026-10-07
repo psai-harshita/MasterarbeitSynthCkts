@@ -16,12 +16,12 @@ students to focus on understanding the underlying principles of analog synthesis
 This thesis presents the design and implementation of electronic circuit architectures for analog music synthesis using
 the LABOR workstation as a practical development and prototyping platform. The work integrates hardware circuit design
 with software components to create a functional electronic music synthesis system suitable for educational purposes
-particularly for observing, measuring and evaluating the generated signals @Klein_2026. 
+particularly for observing, measuring and evaluating the generated signals @Klein_2026 . 
 
 The work will be inspired by Moritz Klein's synthesizer-design tutorials and approach starts with fundamental
-circuit concepts and progressively develops them into functional synthesizer building blocks @Kar_2011. 
+circuit concepts and progressively develops them into functional synthesizer building blocks @Kar_2011 . 
 
-The goal is not only to reproduce existing synthesizer circuits but rather their underlying design ideas will be used as
+The goal is not only to reproduce existing synthesizer circuits but rather their underlying design ideas will be used as 
 a starting point for developing, testing and documenting an independently designed set of circuits on the LABOR
 workstation. 
 
@@ -34,21 +34,20 @@ attention to how the circuit design and component values influence the output. T
 simple hardware-based sequencer for generating rhythmic patterns using clock signals, shift registers, and sequence
 controls. The final part will investigate the generation of different types of noise, particularly white, pink, and blue
 noise, and how their frequency characteristics can be shaped through filtering. After developing and testing the three
-circuit sections individually.@Meyer_1976  @Liu_2000 @Papoulis_2002 @Franco_2001 @Paasschens_2004
+circuit sections individually @Meyer_1976 @Liu_2000 @Papoulis_2002 @Franco_2001 @Paasschens_2004 .
 
 The main purpose of the thesis is not only to build the circuits, but also gain a practical understanding of how they
 work and how different components and design choices affect their behaviour. The circuits will be tested in the
 laboratory, and the measured results will be compared with the expected theoretical behaviour. Software tools will also
 be used when they are useful for visualising or analysing the signals. 
 
-
-This approach will be expected to help students connect theoretical principles with observable sound phenomena and measurable electrical signals. 
-In each exercise, students predict the result, measure it, and compare it with theory. The built-in tools of the LABOR workstation  supports the 
-experimental process by minimizing potential wiring errors and enabling students to carry out the exercises with little supervision. Designing and building 
-a circuits that generate audible signals also expected to keep students interested, engaging and motivating practical learning experience. 
-Together, the three circuit areas teach useful concepts in operational amplifier circuits, digital logic, and filter design.
-
-
+This approach will be expected to help students connect theoretical principles with observable sound phenomena and
+measurable electrical signals. In each exercise, students predict the result, measure it, and compare it with theory.
+The built-in tools of the LABOR workstation  supports the experimental process by minimizing potential wiring errors and
+enabling students to carry out the exercises with little supervision. Designing and building a circuits that generate
+audible signals also expected to keep students interested, engaging and motivating practical learning experience.
+Together, the three circuit areas teach useful concepts in operational amplifier circuits, digital logic, and filter
+design.
 
 
 
@@ -168,21 +167,3 @@ gantt
     Documentation and analysis   :f1, 2027-03-01, 2027-03-31
 
 ```
-
-
-
-
-## References 
-
-1. Modelling the Excess Noise due to Avalanche Multiplication in (Hetero-Junction) Bipolar Transistors -
-   J. C. J. Paasschens and R. de Kort - Bipolar/BiCMOS Circuits and Technology, 2004. 
-2. Probability, Random Variables and Stochastic Processes -  A. Papoulis, S. U. Pillai -  4th ed., McGraw-Hill, 2002.
-3. The Differential Pair as a Triangle-Sine Wave Converter -  R. G. Meyer, W. M. C. Sansen, S. Lui, S. Peeters - IEEE Journal of Solid-State Circuits, June 1976.
-4. Design with Operational Amplifiers and Analog Integrated Circuits - S. Franco - 4th ed., McGraw-Hill, 2015
-5. Limitations of a relaxation oscillator in capacitance measurements - Y. Liu, S. Chen, K. Nakayama, K. Watanabe -
-   IEEE Transactions on Instrumentation and Measurement ( Volume: 49, Issue: 5),  October 2000. 
-6. Tunable Waveform Generator for Sensor and Instrumentation Applications - Sougata Kumar Kar, Siddhartha Sen -  IEEE
-   Transactions on Instrumentation and Measurement ( Volume: 60, Issue: 10), October 2011. 
-7. https://www.moritzkleininstruments.com/
-
-

@@ -38,17 +38,18 @@ book:
   downloads: [pdf]
 
   chapters:
+  #  - frontmatter/01-dedication.qmd
     - frontmatter/02-declaration.qmd
-    - frontmatter/03-abstract.qmd
-    - frontmatter/04-acknowledgements.qmd
+  #  - frontmatter/03-abstract.qmd
+  #  - frontmatter/04-acknowledgements.qmd
     - index.qmd
     - chapter1.qmd
-    - chapter2.qmd
+  #  - chapter2.qmd
     - references.qmd
     
   appendices:
     - appendix/appendix_A.qmd
-    - appendix/appendix_B.qmd
+ #   - appendix/appendix_B.qmd
     
   output-file: "thesis_psh"
    
@@ -68,15 +69,15 @@ format:
     # fontcolor: "black"
     highlight-style: github
 
-  epub:
-    theme: flatly
-    fontsize: 1.2em
-    linestretch: 1.7
-    # mainfont: Helvetica Neue, Helvetica, Arial, sans
-    # monofont: Cascadia Mono, Menlo, Consolas, Courier New, Courier
-    # backgroundcolor: "white"
-    # fontcolor: "black"
-    highlight-style: github
+  # epub:
+  #   theme: flatly
+  #   fontsize: 1.2em
+  #   linestretch: 1.7
+  #   # mainfont: Helvetica Neue, Helvetica, Arial, sans
+  #   # monofont: Cascadia Mono, Menlo, Consolas, Courier New, Courier
+  #   # backgroundcolor: "white"
+  #   # fontcolor: "black"
+  #   highlight-style: github
 
   # typst: default
 
